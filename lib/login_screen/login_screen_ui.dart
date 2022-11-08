@@ -21,7 +21,9 @@ class _LoginScreenUIState extends State<LoginScreenUI> {
           children: [
             Text(
               "Instagram",
-              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 38.sp),
+              style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 38.sp),
             ),
             SizedBox(
               height: 10.h,
@@ -42,13 +44,19 @@ class _LoginScreenUIState extends State<LoginScreenUI> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "New User ?",
+              "New User ",
               style: TextStyle(fontSize: 15.sp),
+
             ),
-            InkWell(
-              onTap: (){},
+            Expanded(
+              child: InkWell(
+                onTap: () {},
+              ),
             ),
-            Text("Signup",style: TextStyle(fontSize: 15.sp,color: Colors.blue),)
+            Text(
+              "Signup",
+              style: TextStyle(fontSize: 15.sp, color: Colors.blue),
+            )
           ],
         ),
       ),
